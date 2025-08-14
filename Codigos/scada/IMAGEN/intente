@@ -1,0 +1,32 @@
+import tkinter as tk
+from tkinter import ttk
+from PIL import Image, ImageTk
+
+class VentanaConImagen:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Interfaz con Imágenes")
+
+        # Cargar las imágenes
+        self.imagen1 = Image.open("central.jpg").resize((200, 200))  # Redimensionar la imagen1
+        self.imagen1 = ImageTk.PhotoImage(self.imagen1)
+
+        self.imagen2 = Image.open("maqueta.jpg").resize((200, 200))  # Redimensionar la imagen2
+        self.imagen2 = ImageTk.PhotoImage(self.imagen2)
+
+        # Crear widgets de etiquetas para mostrar las imágenes y posicionarlos
+        ttk.Label(root, image=self.imagen1).grid(row=0, column=0, padx=10, pady=10, sticky="w")  # "w" indica alineación oeste (izquierda)
+        ttk.Label(root, image=self.imagen2).grid(row=0, column=1, padx=10, pady=10, sticky="e")  # "e" indica alineación este (derecha)
+
+        # Crear un botón a la derecha de las imágenes
+        ttk.Button(root, text="Botón a la Derecha", command=self.cerrar_ventana).grid(row=0, column=2, padx=10, pady=10, sticky="e")  # "e" indica alineación este (derecha)
+
+    def cerrar_ventana(self):
+        self.root.destroy()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = VentanaConImagen(root)
+    root.mainloop()
+
+
