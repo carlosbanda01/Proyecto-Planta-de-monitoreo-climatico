@@ -1,9 +1,5 @@
 ## Créditos y Atribuciones
 
 - **Modelos 3D originales**  
-  - Nombre del autor o usuario — "Nombre del modelo" ([enlace de descarga])
-  - Licencia: [tipo de licencia]
-
-- **Librerías de Arduino utilizadas**  
-  - Nombre de la librería — Autor — Licencia — [enlace al repositorio]
-  - Ej: Adafruit Sensor Library — Adafruit Industries — Licencia BSD — https://github.com/adafruit/Adafruit_Sensor
+  - Giovanni Aggiustatutto — "Pluviometer design " ([https://www.instructables.com/DIY-Arduino-Rain-Gauge/])
+  - Licencia: [Attribution-NonCommercial-ShareAlike 4.0 International]
